@@ -1,53 +1,52 @@
 # Experiment 1: Develop a simple "Hello World" Android application
 
 ## Overview
-This project demonstrates the creation of a basic Android application using Kotlin and XML layouts. It serves as an introductory experiment to understand the Android development environment, project structure, and UI design using `ConstraintLayout`.
+This project is the first experiment in the MAD (Mobile Application Development) Lab. The goal is to set up the Android development environment and create a basic application that displays text on the screen. It serves as a foundation for understanding project configuration, UI design using XML, and activity lifecycle in Android.
 
-## Experiment Description
+## Experiment Documentation
 
 ### Concept and Technology
-- **Android SDK**: The primary framework for building Android applications.
-- **Kotlin**: The modern, recommended programming language for Android development.
-- **XML Layouts**: Used to define the user interface structure declaratively.
-- **ConstraintLayout**: A powerful layout manager that enables complex UI designs with a flat view hierarchy, improving performance and flexibility.
-- **Activity**: Represents a single screen with a user interface.
+The experiment utilizes the following core Android technologies:
+- **Android Studio**: The official Integrated Development Environment (IDE) for Android app development.
+- **Kotlin**: A modern, statically typed programming language used for Android development.
+- **Android XML (Extensible Markup Language)**: Used to define the layout and UI components of the application.
+- **ConstraintLayout**: A flexible layout manager that allows positioning and sizing widgets in a relative manner.
+- **Gradle**: The build system used by Android Studio to compile and package the application.
 
 ### Scenario
-In this experiment, we develop a "Hello World" application that goes beyond the default template by including personalized information. The application displays:
-1.  A bold **"Hello World!"** message.
-2.  The developer's name: **Ruksar Khatun**.
-3.  A specific identifier: **25MCAR0115**.
+The scenario for this experiment is to develop a personalized "Hello World" application. Instead of just a generic message, the app is designed to display the student's name and registration number. The UI is structured to show three distinct pieces of information centered vertically:
+1.  A greeting message: **"Hello World!"**
+2.  The student's name: **Ruksar Khatun**
+3.  The student's registration ID: **25MCAR0115**
 
-The elements are arranged in a vertical chain, centered on the screen, and styled for clarity using bold text.
+All text elements are styled as **bold** and arranged using a packed vertical chain to ensure they appear as a single group in the center of the display.
 
-## Project Structure
+## Project Structure Breakdown
 
-Below is a breakdown of the key files and directories in this project:
+The following tree describes the organized structure of the project files:
 
 ```text
 Exp1/
-├── app/                        # Main application module
-│   ├── src/                    # Source files
-│   │   ├── main/               # Main source set
-│   │   │   ├── java/           # Kotlin/Java source code
+├── app/                        # Main module containing source code and resources
+│   ├── src/                    # Source directory
+│   │   ├── main/               # Main source set (production code)
+│   │   │   ├── java/           # Java/Kotlin source files
 │   │   │   │   └── com/example/exp1/
-│   │   │   │       └── MainActivity.kt      # Main entry point of the app
-│   │   │   ├── res/            # Resources (layouts, strings, images)
+│   │   │   │       └── MainActivity.kt      # The main activity class
+│   │   │   ├── res/            # Resource files
 │   │   │   │   └── layout/
-│   │   │   │       └── activity_main.xml    # UI layout definition
-│   │   │   └── AndroidManifest.xml          # App metadata and configuration
-│   └── build.gradle.kts        # Module-level build configuration
-├── img.png                     # Screenshot of the application output
-├── build.gradle.kts            # Project-level build configuration
-├── settings.gradle.kts         # Project settings and module inclusion
-└── README.md                   # Project documentation
+│   │   │   │       └── activity_main.xml    # The UI layout file for the main screen
+│   │   │   └── AndroidManifest.xml          # Essential information about the app for the Android system
+│   └── build.gradle.kts        # Module-specific build configuration
+├── img.png                     # Visual output of the application
+├── build.gradle.kts            # Project-wide build configuration
+├── settings.gradle.kts         # Project settings including module definitions
+└── README.md                   # This documentation file
 ```
 
 ## Source Code
 
-### UI Layout (`activity_main.xml`)
-The layout uses `ConstraintLayout` to center the text elements and a vertical chain to space them evenly.
-
+### UI Definition (`activity_main.xml`)
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
@@ -97,9 +96,7 @@ The layout uses `ConstraintLayout` to center the text elements and a vertical ch
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
 
-### Main Activity (`MainActivity.kt`)
-The activity class that loads the layout and enables edge-to-edge display.
-
+### Logical Implementation (`MainActivity.kt`)
 ```kotlin
 package com.example.exp1
 
@@ -123,5 +120,8 @@ class MainActivity : AppCompatActivity() {
 }
 ```
 
-## Output Screenshot
-![Application Output](img.png)
+## Experiment Output
+The image below shows the final output of the experiment when run on an Android device/emulator. It displays the "Hello World!" message along with the developer's name and ID.
+
+![Experiment 1 Output](img.png)
+_This is the output of the Experiment One._
