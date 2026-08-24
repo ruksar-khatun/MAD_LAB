@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/appHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="University Department"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:textColor="@color/black"
+        android:background="#F5F5F5" />
+
+    <androidx.slidingpanelayout.widget.SlidingPaneLayout
+        android:id="@+id/slidingPaneLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <!-- List Fragment Container -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/listContainer"
+            android:name="com.example.exp3.ListFragment"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <!-- Detail Fragment Container -->
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/detailContainer"
+            android:name="com.example.exp3.DetailFragment"
+            android:layout_width="400dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2" />
+
+    </androidx.slidingpanelayout.widget.SlidingPaneLayout>
+
+    <TextView
+        android:id="@+id/appFooter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name: Ruksar Khatun | USN: 25MCAR0115"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:padding="8dp"
+        android:textColor="@color/black"
+        android:background="#F5F5F5" />
+</LinearLayout>

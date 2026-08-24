@@ -1,0 +1,4 @@
+- [x] Create `README.md` with all required sections
+- [x] Document Project Structure
+- [x] Define Test Cases and Scenario
+- [x] Verify content and inclusion of USN/Name
