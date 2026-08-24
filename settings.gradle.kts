@@ -22,6 +22,11 @@ dependencyResolutionManagement {
     }
 }
 
+<<<<<<< HEAD
 rootProject.name = "Exp3"
 include(":app")
  
+=======
+rootProject.name = "Exp1"
+include(":app")
+>>>>>>> c8609e24304c3219bf2274bc643369e99d486488

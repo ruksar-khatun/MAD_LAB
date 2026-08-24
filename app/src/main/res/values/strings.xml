@@ -1,3 +1,7 @@
 <resources>
+<<<<<<< HEAD
     <string name="app_name">Exp3</string>
+=======
+    <string name="app_name">Exp1</string>
+>>>>>>> c8609e24304c3219bf2274bc643369e99d486488
 </resources>
