@@ -1,0 +1,2 @@
+- [x] Implement autologin logic in MainActivity.kt
+- [x] Verify build and functionality
