@@ -1,63 +1,83 @@
-# University Department Explorer - Experiment 3
+# Experiment 6: Basic Android Views - Student Registration Form
 
 ## Overview
-This Android application demonstrates the implementation of a flexible and adaptive user interface using **Fragments**. The app provides a master-detail navigation pattern tailored for a university setting, allowing users to browse various departments and view detailed information about each.
+This experiment demonstrates the implementation of a professional, single-screen **Student Registration Form** in Android using a variety of basic UI components. The application focuses on creating a clean, minimal academic-style interface using a specific color palette: **Deep Sea (#156874)** and **Steam (#EDE6E6)**.
 
-## Technology and Concepts
-The project leverages several core Android development technologies:
-- **Fragments**: Used to create modular and reusable UI components. The app features a `ListFragment` for browsing and a `DetailFragment` for information display.
-- **SlidingPaneLayout**: An adaptive UI component that automatically manages dual-pane layouts on large screens (tablets) and single-pane navigation on small screens (phones).
-- **ViewModel**: A `DepartmentViewModel` is used to share state between fragments, ensuring data persistence across configuration changes.
-- **RecyclerView**: Efficiently displays the list of university departments.
-- **Material Design**: Uses Material Card components and a clean color palette for a professional look.
+## Core Experiments
+- Creating a scrollable registration form with multiple input types.
+- Implementing a custom-styled UI with rounded corners and circular icons.
+- Handling user interactions for various views like Buttons, CheckBoxes, and RadioGroups.
+- Displaying a summary of user input in a modal pop-up (AlertDialog).
 
-## Core Experiments & Debugging
-The application is designed as a laboratory for Android Studio's debugging tools:
-1.  **Lifecycle Observation**: By placing a breakpoint in `DetailFragment#onViewCreated`, developers can inspect the Fragment's lifecycle and local variable state during creation.
-2.  **Conditional Breakpoints**: A conditional breakpoint on the department selection event allows pausing execution only when a specific item (e.g., "Computer Science & IT") is clicked, demonstrating advanced troubleshooting techniques.
+## Concept and Technology
+- **Layouts**: `ScrollView`, `LinearLayout`, `RelativeLayout`.
+- **UI Components**: `TextView`, `EditText`, `Button`, `ImageButton`, `CheckBox`, `ToggleButton`, `RadioButton`, `RadioGroup`, `Spinner`.
+- **Material Design**: `TextInputLayout` for password visibility toggle.
+- **Language**: Kotlin.
+- **Styling**: XML Drawables for custom shapes (rounded inputs, circular profile).
 
-## Project Scenario
-The app showcases a **University Management** scenario with the following departments:
-- Computer Science & Information Technology
-- Business
-- Finance
-- Law
-- Psychology
+## Code Snippet
 
-## Project Structure
-```text
-Exp3/
-├── app/
-│   ├── src/main/java/com/example/exp3/
-│   │   ├── MainActivity.kt        # Main entry point, handles adaptive UI logic
-│   │   ├── ListFragment.kt        # Handles the list of departments
-│   │   ├── DetailFragment.kt      # Displays department descriptions
-│   │   ├── DepartmentViewModel.kt # Shared data between fragments
-│   │   ├── DepartmentAdapter.kt   # Adapter for RecyclerView
-│   │   └── Department.kt          # Data model for Department entity
-│   └── src/main/res/layout/
-│       ├── activity_main.xml      # Root layout with Header and Footer
-│       ├── fragment_list.xml      # Layout for the list view
-│       ├── fragment_detail.xml    # Layout for the detail view
-│       └── item_department.xml    # RecyclerView item design
-└── README.md                      # This documentation
+### MainActivity.kt
+```kotlin
+// Logic for binding views and handling registration
+val btnRegister = findViewById<Button>(R.id.btnRegister)
+btnRegister.setOnClickListener {
+    val name = etFullName.text.toString()
+    val phone = "${spCountryCode.selectedItem} ${etPhone.text}"
+    
+    // Show details in a pop-up
+    AlertDialog.Builder(this)
+        .setTitle("Registration Successful")
+        .setMessage("Registered successfully with details: \nName: $name\nPhone: $phone...")
+        .setPositiveButton("OK") { dialog, _ -> dialog.dismiss() }
+        .show()
+}
 ```
 
-## Output & Test Cases
+### activity_main.xml
+```xml
+<!-- Example of the custom styled Password field with toggle -->
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/tilPassword"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:endIconMode="password_toggle">
+    
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/etPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_input"
+        android:inputType="textPassword" />
+</com.google.android.material.textfield.TextInputLayout>
+```
 
-### Main Application UI & Identity Verification
-The screenshot below shows the primary interface with the centered header "University Department". The footer correctly displays the developer's credentials.
-- **Verification**: **Name: Ruksar Khatun | USN: 25MCAR0115**
+## Folder Structure
+```
+Exp6/
+├── app/
+│   ├── src/
+│   │   ├── main/
+│   │   │   ├── java/com/example/exp6/
+│   │   │   │   └── MainActivity.kt
+│   │   │   └── res/
+│   │   │       ├── drawable/
+│   │   │       │   ├── circular_profile.xml
+│   │   │       │   └── rounded_input.xml
+│   │   │       ├── layout/
+│   │   │       │   └── activity_main.xml
+│   │   │       └── values/
+│   │   │           ├── colors.xml
+│   │   │           └── strings.xml
+├── img.png
+└── img_1.png
+```
 
-![Main Output](img.png)
+## Output
+The application provides a seamless registration experience. Below are the visual representations:
 
----
-
-### Test Case: Adaptive Layout & Department Selection
-- **Scenario**: Running the app and selecting a department.
-- **Expected Result**: The app adapts its layout based on screen size. Selecting a department (e.g., "Computer Science & IT") displays its specific details and background color.
-- **Screenshot**: ![Adaptive Layout](img_1.png)
-
----
-**Developer**: Ruksar Khatun  
-**USN**: 25MCAR0115
+| Screenshot | Description |
+| :--- | :--- |
+| ![Main UI](img.png) | **Registration Form**: Shows the professional academic UI with the circular profile icon, country code picker, and password toggle. |
+| ![Success Pop-up](img_1.png) | **Success Pop-up**: Displays the final registration summary in an AlertDialog after clicking the Register button. |

@@ -1,102 +1,252 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/mainRoot"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/appHeader"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="University Department"
-        android:textSize="26sp"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:padding="16dp"
-        android:textColor="@color/black"
-        android:background="#F5F5F5" />
-
-    <androidx.slidingpanelayout.widget.SlidingPaneLayout
-        android:id="@+id/slidingPaneLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1">
-
-        <!-- List Fragment Container -->
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/listContainer"
-            android:name="com.example.exp3.ListFragment"
-            android:layout_width="300dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
-
-        <!-- Detail Fragment Container -->
-        <androidx.fragment.app.FragmentContainerView
-            android:id="@+id/detailContainer"
-            android:name="com.example.exp3.DetailFragment"
-            android:layout_width="400dp"
-            android:layout_height="match_parent"
-            android:layout_weight="2" />
-
-    </androidx.slidingpanelayout.widget.SlidingPaneLayout>
-
-    <TextView
-        android:id="@+id/appFooter"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Name: Ruksar Khatun | USN: 25MCAR0115"
-        android:textSize="14sp"
-        android:gravity="center"
-        android:padding="8dp"
-        android:textColor="@color/black"
-        android:background="#F5F5F5" />
-</LinearLayout>
-=======
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/steam"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_hello"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/tv_name"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="packed" />
+        android:orientation="vertical"
+        android:padding="24dp">
 
-    <TextView
-        android:id="@+id/tv_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ruksar Khatun"
-        android:textStyle="bold"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_id"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_hello" />
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tv_id"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="25MCAR0115"
-        android:textStyle="bold"
-        android:layout_marginTop="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+            <TextView
+                android:id="@+id/tvHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Student Registration"
+                android:textColor="@color/deep_sea"
+                android:textSize="28sp"
+                android:textStyle="bold" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
->>>>>>> c8609e24304c3219bf2274bc643369e99d486488
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create your student profile"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Profile and Full Name Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnProfile"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/circular_profile"
+                android:contentDescription="Profile Photo"
+                android:scaleType="centerInside"
+                android:src="@android:drawable/ic_menu_camera"
+                app:tint="@color/deep_sea" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="4dp"
+                    android:text="Full Name"
+                    android:textColor="@color/deep_sea"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_input"
+                    android:hint="Enter your full name"
+                    android:inputType="textPersonName" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Email Address"
+            android:textColor="@color/deep_sea"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/rounded_input"
+            android:hint="name@university.edu"
+            android:inputType="textEmailAddress" />
+
+        <!-- Phone with Country Code -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Phone Number"
+            android:textColor="@color/deep_sea"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spCountryCode"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/rounded_input"
+                android:paddingEnd="24dp" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_input"
+                android:hint="234 567 890"
+                android:inputType="phone" />
+        </LinearLayout>
+
+        <!-- Password with Toggle -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="Password"
+            android:textColor="@color/deep_sea"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tilPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/deep_sea"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_input"
+                android:hint="••••••••"
+                android:inputType="textPassword"
+                android:padding="12dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Gender -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Gender"
+            android:textColor="@color/deep_sea"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/rgGender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbMale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/deep_sea"
+                android:padding="8dp"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/rbFemale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/deep_sea"
+                android:padding="8dp"
+                android:text="Female" />
+
+            <RadioButton
+                android:id="@+id/rbOther"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="@color/deep_sea"
+                android:padding="8dp"
+                android:text="Other" />
+        </RadioGroup>
+
+        <!-- Terms and Notifications -->
+        <CheckBox
+            android:id="@+id/cbTerms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:buttonTint="@color/deep_sea"
+            android:text="I agree to the terms and conditions"
+            android:textColor="#555555" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Enable Notifications"
+                android:textColor="#555555" />
+
+            <ToggleButton
+                android:id="@+id/tbNotifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_input"
+                android:textOff="OFF"
+                android:textOn="ON" />
+        </LinearLayout>
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:backgroundTint="@color/deep_sea"
+            android:text="Register"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp" />
+
+    </LinearLayout>
+</ScrollView>
