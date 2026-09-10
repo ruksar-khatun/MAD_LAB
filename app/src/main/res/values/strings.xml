@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">FitLife</string>
+    <string name="activity_tracker_title">FitLife Activity Tracker</string>
+    <string name="prompt_name">Enter Your Name</string>
+    <string name="prompt_steps">Number of Steps (e.g. 5000)</string>
+    <string name="label_name_input">Student Name:</string>
+    <string name="label_steps_input">Number of Steps:</string>
+    <string name="label_activity_type">Select Activity Type:</string>
+    <string name="radio_walking">Walking</string>
+    <string name="radio_running">Running</string>
+    <string name="radio_cycling">Cycling</string>
+    <string name="label_daily_goal">Daily Goal</string>
+    <string name="label_notification">Receive Activity Notification</string>
+    <string name="btn_calculate">Calculate Activity</string>
+    <string name="title_result">Activity Result</string>
+    <string name="label_student_name">Student Name:</string>
+    <string name="label_steps_result">Steps Completed:</string>
+    <string name="label_activity_result">Activity Type:</string>
+    <string name="label_goal_result">Daily Goal Status:</string>
+    <string name="btn_back">Back</string>
+    <string name="validation_name_empty">Please enter your name</string>
+    <string name="validation_steps_empty">Please enter number of steps</string>
+    <string name="validation_steps_invalid">Please enter a valid numeric number of steps</string>
+    <string name="validation_activity_empty">Please select an activity type</string>
+    <string name="notification_title">FitLife Activity Recorded</string>
+    <string name="notification_text">Your fitness activity has been successfully recorded!</string>
+</resources>
