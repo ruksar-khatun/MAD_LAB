@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="app_background">#FFFDF5</color> <!-- Warm Cream -->
+    <color name="saffron_orange">#FF9933</color>
+    <color name="vibrant_green">#138808</color>
+    <color name="deep_brown">#4E342E</color>
+</resources>

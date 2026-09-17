@@ -1,0 +1,18 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Exp7" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/saffron_orange</item>
+        <item name="android:windowBackground">@color/app_background</item>
+        <item name="colorSurface">@color/app_background</item>
+        <item name="colorOnSurface">@color/deep_brown</item>
+        <item name="android:colorBackground">@color/app_background</item>
+    </style>
+
+    <style name="Theme.Exp7" parent="Base.Theme.Exp7" />
+
+    <style name="ShapeAppearance.App.RoundedImage" parent="ShapeAppearance.Material3.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+</resources>
