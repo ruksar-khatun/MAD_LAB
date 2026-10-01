@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/ctx_view_details"
+        android:icon="@drawable/ic_info"
+        android:title="@string/menu_view_details" />
+
+    <item
+        android:id="@+id/ctx_share"
+        android:icon="@drawable/ic_share"
+        android:title="@string/menu_share_item" />
+
+    <item
+        android:id="@+id/ctx_copy_name"
+        android:icon="@drawable/ic_copy"
+        android:title="@string/menu_copy_name" />
+
+    <item
+        android:id="@+id/ctx_open_location"
+        android:icon="@drawable/ic_location"
+        android:title="@string/menu_open_location" />
+
+    <item
+        android:id="@+id/ctx_toggle_favourite"
+        android:icon="@drawable/ic_favourite"
+        android:title="@string/menu_remove_favourite" />
+
+</menu>

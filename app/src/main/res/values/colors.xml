@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Green & Cream Brand Palette -->
+    <color name="palette_green">#69994E</color>
+    <color name="palette_green_dark">#4F7336</color>
+    <color name="palette_cream">#F2E8D0</color>
+    <color name="palette_cream_light">#FBF7EE</color>
+    <color name="text_dark">#223319</color>
+
+    <!-- Legacy color names mapped to Green & Cream palette for compatibility -->
+    <color name="denim_blue">#223319</color>
+    <color name="ocean_waters">#4F7336</color>
+    <color name="coral_reef">#69994E</color>
+
+    <!-- Semantic Mappings -->
+    <color name="primary">#69994E</color>
+    <color name="on_primary">#FFFFFF</color>
+    <color name="primary_container">#4F7336</color>
+    <color name="on_primary_container">#FFFFFF</color>
+
+    <color name="secondary">#69994E</color>
+    <color name="on_secondary">#FFFFFF</color>
+    <color name="secondary_container">#F2E8D0</color>
+    <color name="on_secondary_container">#223319</color>
+
+    <color name="accent_coral">#69994E</color>
+
+    <color name="background">#FBF7EE</color>
+    <color name="on_background">#223319</color>
+
+    <color name="surface">#FFFFFF</color>
+    <color name="on_surface">#223319</color>
+    <color name="surface_variant">#F2E8D0</color>
+    <color name="on_surface_variant">#4F7336</color>
+
+    <color name="card_stroke">#E2D8C3</color>
+    <color name="card_stroke_selected">#69994E</color>
+    <color name="card_selected_bg">#F2E8D0</color>
+
+    <color name="favourite_red">#D85545</color>
+</resources>

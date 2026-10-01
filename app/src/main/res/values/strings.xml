@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Heritage &amp; Travel Explorer</string>
+
+    <!-- Navigation -->
+    <string name="nav_explore">Explore</string>
+    <string name="nav_web">Web</string>
+    <string name="nav_favourites">Favourites</string>
+
+    <!-- Options Menu -->
+    <string name="menu_home">Home</string>
+    <string name="menu_open_web">Open Travel Websites</string>
+    <string name="menu_search">Search Destinations</string>
+    <string name="menu_select_all">Select All</string>
+    <string name="menu_share">Share Destination</string>
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_about">About Application</string>
+
+    <!-- Context & Popup Menu -->
+    <string name="menu_view_details">View Details</string>
+    <string name="menu_add_favourite">Add to Favourites</string>
+    <string name="menu_remove_favourite">Remove from Favourites</string>
+    <string name="menu_share_item">Share</string>
+    <string name="menu_copy_name">Copy Destination Name</string>
+    <string name="menu_open_location">Open Location</string>
+    <string name="menu_open_in_webview">Open in WebView</string>
+
+    <!-- UI Labels -->
+    <string name="search_hint">Search heritage sites…</string>
+    <string name="no_favourites_title">No Favourites Yet</string>
+    <string name="no_favourites_msg">Long press or tap the menu on any destination card to add it to your favourites list.</string>
+    <string name="no_results">No heritage destinations match your search.</string>
+    <string name="source_local">LOCAL DRAWABLE</string>
+    <string name="source_online">ONLINE URL</string>
+    <string name="source_badge_local">LOCAL</string>
+    <string name="source_badge_online">ONLINE</string>
+    <string name="showing_status">Showing %1$d Heritage Destinations</string>
+
+    <!-- WebView controls -->
+    <string name="web_back">Back</string>
+    <string name="web_forward">Forward</string>
+    <string name="web_refresh">Reload</string>
+    <string name="web_local_html">Local Offline Guide</string>
+    <string name="web_error_title">Page Failed to Load</string>
+    <string name="web_error_msg">Please check your internet connection or try reloading the local HTML guide.</string>
+    <string name="web_retry">Retry Loading</string>
+
+    <!-- Dialogs -->
+    <string name="about_title">About Heritage &amp; Travel Explorer</string>
+    <string name="about_message">Heritage &amp; Travel Explorer v1.0\n\nDeveloped as part of Experiment 8 (Android Menus and WebView).\n\nFeatures:\n• OptionsMenu, ContextMenu &amp; PopupMenu\n• Integrated WebView with Google Search &amp; Offline Guide\n• 10 Famous Indian Heritage Sites (5 Local Drawables + 5 Real Online Photographs)\n• Gemini AI Insights &amp; Favourites Support\n\nMCA Laboratory Experiment</string>
+    <string name="btn_close">Close</string>
+    <string name="footer_text">Ruksar Khatun | 25MCAR0115</string>
+    <string name="error_load_photo">Unable to load photograph</string>
+</resources>

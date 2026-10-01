@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/pop_view_details"
+        android:icon="@drawable/ic_info"
+        android:title="@string/menu_view_details" />
+
+    <item
+        android:id="@+id/pop_toggle_favourite"
+        android:icon="@drawable/ic_favourite"
+        android:title="@string/menu_add_favourite" />
+
+    <item
+        android:id="@+id/pop_share"
+        android:icon="@drawable/ic_share"
+        android:title="@string/menu_share_item" />
+
+    <item
+        android:id="@+id/pop_open_web"
+        android:icon="@drawable/ic_web"
+        android:title="@string/menu_open_in_webview" />
+
+</menu>

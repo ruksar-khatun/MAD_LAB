@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.Exp8" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/primary_container</item>
+        <item name="colorOnPrimary">@color/on_primary_container</item>
+        <item name="colorSecondary">@color/secondary_container</item>
+        <item name="colorOnSecondary">@color/on_secondary_container</item>
+    </style>
+
+    <style name="Theme.Exp8" parent="Base.Theme.Exp8" />
+</resources>

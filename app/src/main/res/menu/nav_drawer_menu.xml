@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_drawer_explore"
+            android:icon="@drawable/ic_explore"
+            android:title="@string/nav_explore" />
+
+        <item
+            android:id="@+id/nav_drawer_web"
+            android:icon="@drawable/ic_web"
+            android:title="@string/nav_web" />
+
+        <item
+            android:id="@+id/nav_drawer_favourites"
+            android:icon="@drawable/ic_favourite"
+            android:title="@string/nav_favourites" />
+    </group>
+
+    <item android:title="App Options">
+        <menu>
+            <item
+                android:id="@+id/nav_drawer_about"
+                android:icon="@drawable/ic_info"
+                android:title="@string/menu_about" />
+
+            <item
+                android:id="@+id/nav_drawer_settings"
+                android:icon="@drawable/ic_more_vert"
+                android:title="Settings" />
+        </menu>
+    </item>
+
+</menu>

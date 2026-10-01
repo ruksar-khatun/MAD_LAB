@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/menu_search"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="collapseActionView|ifRoom" />
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_explore"
+        android:title="@string/menu_home"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/nav_web_options"
+        android:icon="@drawable/ic_web"
+        android:title="@string/menu_open_web"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_select_all"
+        android:icon="@drawable/ic_select_all"
+        android:title="@string/menu_select_all"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_share"
+        android:icon="@drawable/ic_share"
+        android:title="@string/menu_share"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_refresh"
+        android:icon="@drawable/ic_refresh"
+        android:title="@string/menu_refresh"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_about"
+        android:icon="@drawable/ic_info"
+        android:title="@string/menu_about"
+        app:showAsAction="never" />
+
+</menu>
