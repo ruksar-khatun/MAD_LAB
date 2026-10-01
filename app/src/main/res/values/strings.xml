@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">AuthApp</string>
+
+    <!-- Registration -->
+    <string name="create_account">Create Account</string>
+    <string name="join_us">Join us and get started.</string>
+    <string name="full_name">Full Name</string>
+    <string name="email_address">Email Address</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_account">Already have an account? Log in</string>
+    <string name="clear_form">Clear Form</string>
+    <string name="draft_restored">Your previous progress has been restored.</string>
+
+    <!-- Login -->
+    <string name="welcome_back">Welcome Back</string>
+    <string name="login_to_continue">Log in to continue.</string>
+    <string name="email_or_username">Email or Username</string>
+    <string name="log_in">Log In</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="dont_have_account">Don\'t have an account? Sign up</string>
+
+    <!-- Dashboard -->
+    <string name="welcome_user">Welcome, %1$s!</string>
+    <string name="logged_in_subtitle">You are successfully logged in.</string>
+    <string name="account_details">Account Details</string>
+    <string name="account_status">Account Status</string>
+    <string name="session_status">Session Status</string>
+    <string name="active">Active</string>
+    <string name="logged_in">Logged In</string>
+    <string name="log_out">Log Out</string>
+    <string name="view_stored_data">View Stored Persistence Data</string>
+</resources>

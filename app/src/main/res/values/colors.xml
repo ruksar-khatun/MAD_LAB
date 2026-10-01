@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Design System Colors - Light Theme -->
+    <color name="bg_pastel_lavender">#EDE7F6</color>
+    <color name="bg_navy">#EDE7F6</color>
+    <color name="card_off_white">#FFFFFF</color>
+    <color name="primary_purple">#8B5CF6</color>
+    <color name="purple_dark">#7C3AED</color>
+    <color name="purple_light">#A78BFA</color>
+
+    <!-- Accent Gradient Colors -->
+    <color name="pastel_pink">#F4B6D2</color>
+    <color name="lavender">#D8C5F5</color>
+    <color name="light_peach">#F9D6D9</color>
+
+    <!-- Text Colors for Light Background -->
+    <color name="text_heading">#1E1B4B</color>
+    <color name="text_navy">#101B2B</color>
+    <color name="text_muted">#64748B</color>
+    <color name="text_subtitle">#6B7280</color>
+    <color name="text_light_muted">#6B7280</color>
+    <color name="text_white">#FFFFFF</color>
+
+    <!-- Input Fields -->
+    <color name="input_bg">#FFFFFF</color>
+    <color name="input_stroke">#E2E8F0</color>
+    <color name="input_hint">#94A3B8</color>
+
+    <!-- Status Badges -->
+    <color name="status_green">#059669</color>
+    <color name="status_green_bg">#D1FAE5</color>
+    <color name="error_red">#EF4444</color>
+</resources>
