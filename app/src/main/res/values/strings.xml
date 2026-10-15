@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ContactShare</string>
+    <string name="app_subtitle">Your contacts, shared simply</string>
+    <string name="welcome_heading">Your Contacts</string>
+    <string name="welcome_subheading">Find and share contact details securely.</string>
+    <string name="contacts_count">%1$d contacts found</string>
+    <string name="search_hint">Search contacts by name or phone…</string>
+
+    <string name="permission_title">Permission Required</string>
+    <string name="permission_desc">ContactShare needs permission to access your device contacts to display and share them securely.</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="open_settings">Open Settings</string>
+
+    <string name="no_contacts_title">No Contacts Found</string>
+    <string name="no_contacts_desc">No contacts match your search or exist on this device.</string>
+
+    <string name="contact_details_title">Contact Details</string>
+    <string name="phone_number_label">Phone Number</string>
+    <string name="email_label">Email Address</string>
+    <string name="share_contact">Share Contact</string>
+    <string name="call_contact">Call Contact</string>
+    <string name="share_via">Share Contact via</string>
+    <string name="share_contact_text">Contact Details:\nName: %1$s\nPhone: %2$s\nEmail: %3$s</string>
+    <string name="permission_denied_toast">Contacts permission is required to view contacts.</string>
+    <string name="footer_text">Ruksar Khatun | 25MCAR0115</string>
+</resources>
