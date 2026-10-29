@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TourPulse</string>
+    <string name="tab_explore">Explore</string>
+    <string name="tab_itinerary">Bucket List</string>
+    <string name="tab_tours">City Tours</string>
+    <string name="tab_passport">Passport</string>
+
+    <string name="search_locations_hint">Search famous locations&#8230;</string>
+    <string name="filter_all">All Places</string>
+    <string name="filter_wonders">Wonders</string>
+    <string name="filter_historical">Historical</string>
+    <string name="filter_nature">Nature</string>
+    <string name="filter_beaches">Beaches</string>
+    <string name="filter_modern">Modern</string>
+
+    <string name="add_to_bucket">Add to Bucket List</string>
+    <string name="add_custom_location">Add Custom Spot</string>
+
+    <string name="location_name_hint">Location Name (e.g. Eiffel Tower)</string>
+    <string name="city_country_hint">City / Country (e.g. Paris, France)</string>
+    <string name="desc_hint">Description &amp; Highlights</string>
+
+    <string name="start">Start</string>
+    <string name="pause">Pause</string>
+    <string name="reset">Reset</string>
+    <string name="done">Visited</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+</resources>
