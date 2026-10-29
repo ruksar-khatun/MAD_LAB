@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardArticle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="14dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="14dp"
+    android:layout_marginBottom="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="#FFFFFF"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="2dp"
+    app:cardPreventCornerOverlap="true"
+    app:strokeColor="#E5E7EB"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Article Thumbnail Image -->
+        <ImageView
+            android:id="@+id/ivArticleImage"
+            android:layout_width="match_parent"
+            android:layout_height="205dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/news_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/placeholder_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Meta info: Source badge + Category badge + Clock & Date -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tvSource"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_source_badge"
+                    android:paddingHorizontal="12dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="#1A73E8"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:text="BBC News" />
+
+                <TextView
+                    android:id="@+id/tvCategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_category_badge"
+                    android:paddingHorizontal="10dp"
+                    android:paddingVertical="5dp"
+                    android:textColor="#4B5563"
+                    android:textSize="11sp"
+                    tools:text="Technology" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_marginEnd="4dp"
+                    android:contentDescription="Time"
+                    android:src="@drawable/ic_clock"
+                    app:tint="#6B7280" />
+
+                <TextView
+                    android:id="@+id/tvPublishedAt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#6B7280"
+                    android:textSize="12sp"
+                    tools:text="15 mins ago" />
+            </LinearLayout>
+
+            <!-- Full Article Title / Headline (Ensures every article shows full title) -->
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:lineSpacingExtra="3dp"
+                android:textColor="#1F2937"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Major Technology Breakthrough Announced in Quantum Computing and Artificial Intelligence" />
+
+            <!-- Description -->
+            <TextView
+                android:id="@+id/tvDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:textColor="#4B5563"
+                android:textSize="14sp"
+                tools:text="Researchers have reached a new milestone in error correction, bringing practical quantum computing closer to reality." />
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="8dp"
+                android:background="#F3F4F6" />
+
+            <!-- Action Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnReadMore"
+                    style="@style/Widget.Material3.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/read_article"
+                    android:textColor="#1A73E8"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    app:icon="@drawable/ic_arrow_forward"
+                    app:iconGravity="end"
+                    app:iconPadding="6dp"
+                    app:iconSize="16dp"
+                    app:iconTint="#1A73E8" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <ImageButton
+                    android:id="@+id/btnShare"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/share_article"
+                    android:padding="8dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_share"
+                    app:tint="#6B7280" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

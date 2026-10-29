@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">News Reader</string>
+    <string name="search_hint">Search news headlines...</string>
+    <string name="category_india">India</string>
+    <string name="category_world">Global</string>
+    <string name="category_general">Top Stories</string>
+    <string name="category_business">Business</string>
+    <string name="category_technology">Technology</string>
+    <string name="category_entertainment">Entertainment</string>
+    <string name="category_sports">Sports</string>
+    <string name="category_science">Science</string>
+    <string name="category_health">Health</string>
+    <string name="read_article">Read Article</string>
+    <string name="share_article">Share Article</string>
+    <string name="no_articles_found">No Articles Found</string>
+    <string name="empty_desc">Try searching with a different term or select another category.</string>
+    <string name="network_error">Network Connection Issue</string>
+    <string name="retry_request">Retry Request</string>
+    <string name="news_image">News Image</string>
+    <string name="empty_icon">Empty state icon</string>
+    <string name="network_icon">Network error icon</string>
+    <string name="filter_title">Filter &amp; Sort News</string>
+    <string name="sort_latest">⚡ Latest News First</string>
+    <string name="sort_oldest">⏳ Oldest News First</string>
+    <string name="sort_title">🔤 Headline Title (A to Z)</string>
+    <string name="footer_text">Ruksar Khatun | 25MCAR0115</string>
+</resources>
